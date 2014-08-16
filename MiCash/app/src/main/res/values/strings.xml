@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MiCash</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="transaccion">Tipo de Transacción</string>
+    <string name="iniciar_sesion">Iniciar Sesion</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="registrarse_con_facebook">Registrarse con Facebook</string>
+    <string name="todo">TODO</string>
+    <string name="title_activity_registrarse">Registrarse</string>
+    <string name="correo_electronico">correo electrónico</string>
+    <string name="username">Nombre de usuario</string>
+    <string name="contrasena">Contraseña</string>
+    <string name="contrasena_confirmar">Confirmar contraseña</string>
+    <string name="perfil">PERFIL</string>
+    <string name="nulo"></string>
+    <string name="nombre">Nombre</string>
+    <string name="apellido">Apellido</string>
+    <string name="title_activity_registrase">Registrase</string>
+
+</resources>

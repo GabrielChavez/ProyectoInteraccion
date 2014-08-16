@@ -1,0 +1,108 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical"
+    android:textAlignment="center"
+    android:baselineAligned="false"
+    android:clickable="false"
+    android:focusableInTouchMode="false"
+    android:paddingTop="10dp"
+    android:background="#fbe4e4e4">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff0ecea"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView1"
+            android:editable="false"
+            android:hint="@string/transaccion"
+            android:textSize="20dp"
+            android:textIsSelectable="false" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/spinner1"
+            android:entries="@array/planets_array" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff0ecea"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:editable="false"
+            android:hint="@string/transaccion"
+            android:textSize="20dp"
+            android:textIsSelectable="false" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/spinner32"
+            android:entries="@array/planets_array" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff0ecea"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            android:editable="false"
+            android:hint="@string/transaccion"
+            android:textSize="20dp"
+            android:textIsSelectable="false" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/spinner33"
+            android:entries="@array/planets_array" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff0ecea"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView"
+                android:editable="false"
+                android:hint="@string/transaccion"
+                android:textSize="20dp"
+                android:textIsSelectable="false" />
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/spinner3"
+                android:entries="@array/planets_array" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
