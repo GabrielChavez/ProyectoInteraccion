@@ -11,13 +11,18 @@
     <string name="todo">TODO</string>
     <string name="title_activity_registrarse">Registrarse</string>
     <string name="correo_electronico">correo electrónico</string>
-    <string name="username">Nombre de usuario</string>
+    <string name="username">Username</string>
     <string name="contrasena">Contraseña</string>
+    <string name="repitacontrasena">Repita la contraseña</string>
     <string name="contrasena_confirmar">Confirmar contraseña</string>
     <string name="perfil">PERFIL</string>
     <string name="nulo"></string>
     <string name="nombre">Nombre</string>
     <string name="apellido">Apellido</string>
+    <string name="salario">Presupuesto</string>
+    <string name="nombreEjemplo">Raul</string>
+    <string name="apellidoEjemplo">Mira</string>
+    <string name="salarioEjemplo">$600</string>
     <string name="title_activity_registrase">Registrase</string>
 
 </resources>

@@ -7,35 +7,52 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".Registrarse" >
+    tools:context=".Registrarse"
+    android:background="#fff0f0f0">
 
-    <EditText
-        android:id="@+id/txt_email"
-        android:layout_width="match_parent"
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="@string/correo_electronico"
-        android:inputType="textEmailAddress"
-        android:drawableLeft="@drawable/ic_action_email" >
-        <requestFocus />
-    </EditText>
+        android:background="#ffffffff">
 
-    <EditText
-        android:id="@+id/txt_username"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="@string/username"
-        android:drawableLeft="@drawable/ic_action_person" />
+        <EditText
+            android:id="@+id/txt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/correo_electronico"
+            android:inputType="textEmailAddress"
+            android:drawableLeft="@drawable/ic_action_email" >
+            <requestFocus />
+        </EditText>
 
-    <EditText
-        android:id="@+id/txt_password"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="@string/contrasena"
-        android:inputType="textPassword"
-        android:drawableLeft="@drawable/ic_action_secure"/>
+        <EditText
+            android:id="@+id/txt_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/username"
+            android:drawableLeft="@drawable/ic_action_person" />
+
+        <EditText
+            android:id="@+id/txt_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/contrasena"
+            android:inputType="textPassword"
+            android:drawableLeft="@drawable/ic_action_secure"/>
+
+        <EditText
+            android:id="@+id/txt_passwordAgain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/repitacontrasena"
+            android:inputType="textPassword"
+            android:drawableLeft="@drawable/ic_action_secure" />
+    </LinearLayout>
 
     <TextView
         android:id="@+id/textView2"
@@ -66,34 +83,75 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal" >
+        android:orientation="vertical"
+        android:background="#ffffffff">
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/nombre"
+            android:id="@+id/textView"
+            android:textAlignment="center"
+            android:textSize="13dp"
+            android:textColor="#ff000000"
+            android:textIsSelectable="false"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/txt_nombre"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
             android:layout_weight="1"
-            android:orientation="vertical" >
+            android:ems="10"
+            android:hint="@string/nombreEjemplo"
+            android:inputType="textPersonName"
+            tools:ignore="NestedWeights" />
 
-            <EditText
-                android:id="@+id/txt_nombre"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:ems="10"
-                android:hint="@string/nombre"
-                android:inputType="textPersonName"
-                tools:ignore="NestedWeights" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/apellido"
+            android:id="@+id/textView4"
+            android:textAlignment="center"
+            android:textSize="13dp"
+            android:textColor="#ff000000"
+            android:textIsSelectable="false"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:textStyle="bold" />
 
-            <EditText
-                android:id="@+id/txt_apellido"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:ems="10"
-                android:hint="@string/apellido"
-                android:inputType="textPersonName" />
+        <EditText
+            android:id="@+id/txt_apellido"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="@string/apellidoEjemplo"
+            android:inputType="textPersonName" />
 
-        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/salario"
+            android:id="@+id/textView5"
+            android:textAlignment="center"
+            android:textSize="13dp"
+            android:textColor="#ff000000"
+            android:textIsSelectable="false"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/txt_salario"
+            android:hint= "@string/salarioEjemplo"/>
+
 
         <!--<QuickContactBadge
             android:id="@+id/quickContactBadge1"
@@ -102,5 +160,15 @@
             android:layout_weight="1" />-->
 
     </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrarse"
+        android:id="@+id/confirmarRegistro"
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:textColor="#ff191919"
+        android:longClickable="false"/>
 
 </LinearLayout>
